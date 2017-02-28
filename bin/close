@@ -1,0 +1,6 @@
+#!/bin/bash
+echo "CLOSING THE DOOR"
+sudo su -c "echo \"1\" > /sys/class/gpio/gpio24/value"
+sleep 0.1
+sudo su -c "echo \"0\" > /sys/class/gpio/gpio24/value"
+
